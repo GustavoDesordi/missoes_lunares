@@ -25,20 +25,23 @@ O projeto utiliza apenas bibliotecas padrão do Java, sem necessidade de arquivo
 3. Compile o projeto normalmente.  
 4. Execute a classe principal:
 
+```
+src/main/java/rv/missoes_lunares/view/Main.java
+```
+
 ou
 
 1. Baixe ou clone o repositório.  
 2. Compile com esta linha de comando no terminal:
+   
 ```
 mvn clean compile
 ```
+
 4. E então execute com esta linha de comando: mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
-```
-mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
-```
 
 ```
-src/main/java/rv/missoes_lunares/view/Main.java
+mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
 ```
 
 O programa será iniciado no terminal e exibirá o menu principal do sistema.
