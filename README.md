@@ -28,8 +28,14 @@ O projeto utiliza apenas bibliotecas padrão do Java, sem necessidade de arquivo
 ou
 
 1. Baixe ou clone o repositório.  
-2. Compile com esta linha de comando no terminal: mvn clean compile
-3. E então execute com esta linha de comando: mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
+2. Compile com esta linha de comando no terminal:
+```
+mvn clean compile
+```
+4. E então execute com esta linha de comando: mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
+```
+mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
+```
 
 ```
 src/main/java/rv/missoes_lunares/view/Main.java
