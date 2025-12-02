@@ -38,7 +38,7 @@ ou
 mvn clean compile
 ```
 
-4. E então execute com esta linha de comando: mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
+4. E então execute com esta linha de comando:
 
 ```
 mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
