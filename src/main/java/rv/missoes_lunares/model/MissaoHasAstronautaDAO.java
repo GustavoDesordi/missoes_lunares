@@ -1,0 +1,58 @@
+package rv.missoes_lunares.model;
+
+import java.io.Serializable;
+import java.util.UUID;
+
+import rv.missoes_lunares.repository.*;
+
+public class MissaoHasAstronautaDAO extends Querys implements Serializable {
+
+	private String missao;
+	private String astronauta;
+	private String vinculo_uuid;
+	
+	public MissaoHasAstronautaDAO() {
+		this.collection = "MissaoHasAtronauta";
+	}
+	
+	public String createVinculo(Object missao) {
+		
+		this.vinculo_uuid = UUID.randomUUID().toString();
+		
+	    if (!super.create(missao)) {
+	        System.out.println(this.ErroAoSalvarDados);
+	        return null;
+	    }
+
+	    return this.vinculo_uuid;
+	}
+	
+	public boolean createVinculo2(String uuid, Object missao) {
+		
+		this.vinculo_uuid = uuid;
+		
+	    if (!super.create(missao)) {
+	        System.out.println(this.ErroAoSalvarDados);
+	        return false;
+	    }
+
+	    return true;
+	}
+
+	public String getMissao() {
+		return missao;
+	}
+
+	public void setMissao(String missao) {
+		this.missao = missao;
+	}
+
+	public String getAstronauta() {
+		return astronauta;
+	}
+
+	public void setAstronauta(String astronauta) {
+		this.astronauta = astronauta;
+	}
+
+}
