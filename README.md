@@ -31,12 +31,14 @@ src/main/java/rv/missoes_lunares/view/Main.java
 
 ou rode as seguintes linhas de comando no Linux:
 
+1. Para compilar:
 ```
-src/main/java/rv/missoes_lunares/view/Main.java
+mvn clean compile
 ```
 
+2. Para executar:
 ```
-src/main/java/rv/missoes_lunares/view/Main.java
+mvn exec:java -Dexec.mainClass="rv.missoes_lunares.view.Main"
 ```
 
 O programa será iniciado no terminal e exibirá o menu principal do sistema.
@@ -60,5 +62,5 @@ Desenvolvido por **Gustavo Desordi** como projeto acadêmico de Programação Or
 ---
 
 <p align="center">
-  <img src="https://i.pinimg.com/originals/41/36/2b/41362b7f052b1c34e9774e2c278397e6.gif" alt="Cute cat" width="300" />
+  <img src="https://i.pinimg.com/originals/f0/ae/8b/f0ae8bc86ab9b5459880ea9e8894774d.gif" alt="Cute cat" width="300" />
 </p>
