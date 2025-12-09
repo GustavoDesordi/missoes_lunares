@@ -1,21 +1,63 @@
-# missões_lunares 🚀
+🚀 Missões Lunares
 
-**missoes_lunares** — Projeto desenvolvido para a disciplina de Algoritmos e Programação (Ciência da Computação 2/8).
+Missões Lunares é um sistema desenvolvido em Java para gerenciar missões espaciais da agência fictícia Lunar Systems, permitindo registrar astronautas, naves e missões, além de organizar seus relacionamentos.
 
-## 📄 Sobre o projeto
+🧠 Sobre o projeto
 
-Este repositório contém o código-fonte de exercícios/implementações propostos pela disciplina de Algoritmos e Programação, com foco em lógica de programação, estruturas de dados e algoritmos clássicos. O objetivo é servir como um conjunto de “missões” — pequenos desafios para praticar conceitos fundamentais de programação em Java (e possivelmente outras tecnologias).
+O sistema permite:
 
-### Principais objetivos
+Cadastrar missões, astronautas e naves;
 
-- Consolidar conceitos de lógica de programação e algoritmos.  
-- Testar habilidades de codificação implementando problemas e soluções clássicas.  
-- Disponibilizar exemplos de código como referência para estudos.  
+Relacionar cada missão à nave utilizada e aos astronautas participantes;
 
-## 🧰 Tecnologias
+Registrar datas de lançamento e retorno;
 
-- Java — código principal do projeto.  
-- Maven (via `pom.xml`) — para gerenciar dependências e construção do projeto.  
-- Estrutura típica de projetos Java (pastas `src`, arquivos de configuração `.gitignore`, `.classpath`, etc.).
+Validar regras de negócio, como idade mínima e código único;
 
-## 📁 Estrutura do repositório
+Persistir dados através de arquivos, utilizando repositórios organizados em camadas;
+
+Listar informações e consultar registros pelo menu principal.
+
+⚙️ Requisitos
+
+Antes de executar o projeto, é necessário ter instalado:
+
+Java JDK 17+
+
+Git
+
+Uma IDE compatível com Maven (VSCode, IntelliJ ou Eclipse)
+
+O projeto utiliza apenas bibliotecas padrão do Java, sem necessidade de arquivos .jar externos.
+
+🚀 Como executar
+
+Baixe ou clone o repositório.
+
+Abra o projeto em uma IDE com suporte a Maven.
+
+Compile o projeto normalmente.
+
+Execute a classe principal:
+
+src/main/java/rv/missoes_lunares/view/Main.java
+
+
+O programa será iniciado no terminal e exibirá o menu principal do sistema.
+
+🧾 Estrutura básica
+MissõesLunares/
+├── src/
+│   └── main/java/rv/missoes_lunares/
+│       ├── model/           # Entidades: Missão, Astronauta, Nave e relacionamentos
+│       ├── repository/      # Persistência, leitura e gravação dos dados
+│       ├── service/         # Regras de negócio e utilidades
+│       └── view/            # Interface textual e classe Main
+├── pom.xml                  # Configuração Maven
+└── README.md
+
+👨‍💻 Autor
+
+Desenvolvido por Gustavo Desordi como projeto acadêmico de Programação Orientada a Objetos.
+
+<p align="center"> <img src="[https://i.pinimg.com/originals/41/36/2b/41362b7f052b1c34e9774e2c278397e6.gif](https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHVmcnhkZzBsbXN6d3A3anE2NTE1MDl3cXVlMzg3NXAwbXhqMm5zdCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/In0Lpu4FVivjISX9HT/giphy.gif)" alt="Cute cat" width="300" /> </p>
